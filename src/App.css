@@ -1,0 +1,11 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.App {
+    position: relative;
+    z-index: 0;
+    color: red;
+}

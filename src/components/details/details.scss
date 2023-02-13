@@ -1,0 +1,55 @@
+@mixin flex {
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.details{
+    color: purple;
+    .detail{
+        margin: 0.5rem 2rem;
+        border-left: 10px solid brown;
+        padding: 1rem;
+        border-radius: 8px;
+        margin-top: 3rem;
+        h1{
+            text-align: center;
+            font-size: 4rem;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+        h2{
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: rgb(4, 50, 25);
+        }
+        p{
+            padding: 1rem 1.5rem;
+            font-size: 1.5rem;
+        }
+        .btn{
+            @include flex();
+            gap: 2rem;
+            margin-top: 3rem;
+            button{
+                outline: none;
+                border: none;
+                background-color: brown;
+                color: white;
+                padding: 0.5rem 1rem;
+                font-size: 2vw;
+                border-radius: 8px;
+                &:hover{
+                    background-color: green;
+                }
+                .icon{
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
